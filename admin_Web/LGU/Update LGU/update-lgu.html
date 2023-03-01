@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registered Pet</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="https://kit.fontawesome.com/e155720464.js" crossorigin="anonymous"></script> 
+	<link rel="stylesheet" type="text/css" href="update-lgu.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
+</head>
+
+<body>
+    <div class="sidebar">
+		<div class="sidebar-brand">
+			<img class="headerPhoto" src="../../../image/petinder_logo.png" style='object-fit: contain' alt="">
+		</div>
+		
+		<div class="sidebar-menu">
+			<ul>
+				<li>
+					<a href="../../../admin_Web/Dashboard/Dashboard.html"><span><i class="fa-solid fa-table-cells-large"></i></span><span>Dashboard</span></a>
+				</li>
+				<li>
+					<div id="myaccordion">
+						<input type="checkbox" id="accordion1" class="hidecontent"/>
+						<label for="accordion1"><span><i class="fa-solid fa-user"></i></span><span class="name"> Manage Account </span> <span><i class="fa-solid fa-caret-down"></i></span></a></label>
+						<div class="content">
+							<p><a href="../../../admin_Web/Registered Pet/Registered_Pet.html"><span></span><span class="name">Registered Pets</span></a></p>
+							<p><a href="../../../admin_Web/Pet Seller/Pet_Seller.html"><span></span><span class="name">Pet Seller</span></a></p>
+							<p><a href="../../../admin_Web/Pet Owner/Pet_Owner.html" ><span></span><span class="name">Pet Owner</span></a></p>
+							<p><a href="../../../admin_Web/LGU/LGU.html" class="active"><span></span><span class="name">LGUs</span></a></p>
+							<p><a href="../../../admin_Web/Admin/Admin.html"><span></span><span class="name">Admin</span></a></p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div id="myaccordion">
+						<input type="checkbox" id="accordion2" class="hidecontent"/>
+						<label for="accordion2"><span><i class="fa-solid fa-gears"></i></span><span class="name">Settings</span> <span><i class="fa-solid fa-caret-down"></i></span></a></label>
+						<div class="content hidecontent">
+							<p><a href="../../../admin_Web/Settings/Settings.html"><span></span><span class="name">Manage Settings</span></a></p>
+							<p><a href="../../../admin_Web/login.html"><span></span><span class="name">Logout</span></a></p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</div>
+
+	<div class="main-content">
+		<header>
+			<h2>
+				<label for="">
+				 <span><i class="fa-solid fa-bars"></i></span>
+				</label>
+				Update LGU
+			</h2>
+
+
+			<div class="user-wrapper">
+				<img src="../../../image/cesar_olaer.png" width="40px" height="40px" alt="">
+				<div>
+					<h4>Cesar Olaer</h4>
+				</div>
+			</div>
+
+		</header>
+		<div class="container">
+			<div>
+				<a href="../../../admin_Web/LGU/LGU_Profile.html">
+					<div class="dropdown">
+						<button class="dropbtn"><span><i class="fa-solid fa-arrow-left"></i></span></button>
+					  </div>
+				</a>
+			</div>
+			<div class="row">
+                <div class="lgu-header">
+                    <u>Update LGU</u>
+                </div>
+            </div>
+            <div class="row">
+				<div class="col">
+                    <div class="col-add">
+						<label for="branchname"><b>Branch Name</b></label>
+					</div>
+                    <div class="col-add">
+                        <input type="text" placeholder="Enter Branch Name" name="branchname" id="branchname" required>
+					</div><div class="col-add">
+						<label for="dateRegistered"><b>Date Registered</b></label>
+					</div>
+                    <div class="col-add">
+                        <input type="text" placeholder="Enter Date Registered" name="dateRegistered" id="dateRegistered" required>
+					</div><div class="col-add">
+						<label for="address"><b>Address</b></label>
+					</div>
+                    <div class="col-add">
+                        <input type="text" placeholder="Enter Address" name="address" id="address" required>
+					</div>
+                    <div class="col-add">
+						<label for="contact"><b>Contact Number</b></label>
+					</div>
+                    <div class="col-add">
+                        <input type="text" placeholder="Enter Contact Number" name="contact" id="contact" required>
+					</div>
+                    
+					<div class="col-add">
+						<label for="email"><b>Email</b></label>
+					</div>
+                    <div class="col-add">
+                        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+					</div>
+                    
+				</div>
+				<div class="col">
+                    <div class="profile-wrapper">
+                        <img src="../../../image/profile.png" style="flex: 1; width: 100%; height: 100%;" alt="">
+                    </div>
+                    
+                   
+                    <div class="add-button-wrapper">
+                        <a href="">
+                            <div class="next">
+                                <button class="next-button">Submit</span></button>
+                              </div>
+                        </a>
+                    </div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registered Pet</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="https://kit.fontawesome.com/e155720464.js" crossorigin="anonymous"></script> 
+	<link rel="stylesheet" type="text/css" href="lgu-settings.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
+    
+</head>
+
+<body class="body">
+    <div class="sidebar">
+		<div class="sidebar-brand">
+			<img class="headerPhoto" src="../../image/petinder_logo.png" style='object-fit: contain' alt="">
+		</div>
+		
+		<div class="sidebar-menu">
+			<ul>
+                
+				<li>
+					<div id="myaccordion">
+						<input type="checkbox" id="accordion1" class="hidecontent"/>
+						<label for="accordion1"><span><i class="fa-solid fa-user"></i></span><span class="name"> Manage Account </span> <span><i class="fa-solid fa-caret-down"></i></span></a></label>
+						<div class="content hidecontent">
+							<p><a href="../../LGU-Web/LGU-RegisteredPet/lgu-registered-pet.html"><span></span><span class="name">Registered Pets</span></a></p>
+							<p><a href="../../LGU-Web/LGU-PetSeller/lgu-pet-seller.html"><span></span><span class="name">Pet Seller</span></a></p>
+							<p><a href="../../LGU-Web/LGU-PetOwner/lgu-pet-owner.html"><span></span><span class="name">Pet Owner</span></a></p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="../../LGU-Web/LGU-LostPet/lgu-lost-pet.html"><span><i class="fa-solid fa-paw"></i></span><span>Lost Pets</span></a>
+				</li>
+				<li>
+					<a href="../../LGU-Web/LGU-Announcement/lgu-announcement.html"><span><i class="fa-solid fa-bullhorn"></i></span><span>Announcement</span></a>
+				</li>
+				<li>
+					<div id="myaccordion">
+						<input type="checkbox" id="accordion2" class="hidecontent"/>
+						<label for="accordion2"><span><i class="fa-solid fa-gears"></i></span><span class="name">Settings</span> <span><i class="fa-solid fa-caret-down"></i></span></a></label>
+						<div class="content">
+							<p><a href="../../LGU-Web/LGU-ManageSettings/lgu-settings.html" class="active"><span></span><span class="name">Manage Settings</span></a></p>
+							<p><a href="../../LGU-Web/lgu-login.html"><span></span><span class="name">Logout</span></a></p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="main-content">
+		<header>
+			<h2>
+				<label for="">
+				 <span><i class="fa-solid fa-bars"></i></span>
+				</label>
+				Manage Settings
+			</h2>
+
+
+			<div class="user-wrapper">
+				<img src="../../image/cesar_olaer.png" width="40px" height="40px" alt="">
+				<div>
+					<h4>Cesar Olaer</h4>
+				</div>
+			</div>
+
+		</header>
+		<div class="container-settings">
+            
+			<div class="row-container">
+                <div class="row">
+                     <div class="col header-update" id="updateHeader">
+                        <h3 onclick="toggleUpdateDiv()">Update Profile</h3>
+                        
+                        
+                    </div>
+                    <div class="col header-change" id="changeHeader">
+                        <h3 onclick="toggleChangeDiv()">Change Password</h3>
+                        
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col update" id="updateDiv">
+                        <div class="col-add">
+                            <label for="email"><b>First Name</b></label>
+                        </div>
+                        <div class="col-add">
+                            <input type="text" placeholder="Enter Firstname" name="firstname" id="firstname" required>
+                        </div>
+                        <div class="col-add">
+                            <label for="email"><b>Last Name</b></label>
+                        </div>
+                        <div class="col-add">
+                            <input type="text" placeholder="Enter Lastname" name="lastname" id="lastname" required>
+                        </div>
+                        <div class="col-add">
+                            <label for="email"><b>Email</b></label>
+                        </div>
+                        <div class="col-add">
+                            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                        </div><div class="col-add">
+                            <label for="email"><b>Contact Number</b></label>
+                        </div>
+                        <div class="col-add">
+                            <input type="text" placeholder="Enter Contact Number" name="contact" id="contact" required>
+                        </div>
+                    </div>
+                    <div class="col change" id="changeDiv">
+                        <div class="col-add">
+                            <label for="email"><b>Current Password</b></label>
+                        </div>
+                        <div class="col-add">
+                            <input type="text" placeholder="Enter Username" name="current" id="current" required>
+                        </div>
+                        <div class="col-add">
+                            <label for="email"><b>New Password</b></label>
+                        </div>
+                        <div class="col-add">
+                            <input type="text" placeholder="Enter Password" name="new" id="new" required>
+                        </div><div class="col-add">
+                            <label for="email"><b>Confirm New Password</b></label>
+                        </div>
+                        <div class="col-add">
+                            <input type="text" placeholder="Enter Confirm Password" name="confirmNew" id="confirmNew" required>
+                        </div>
+                    </div>
+
+                </div>	
+            </div>
+		</div>
+        <script>
+           function toggleUpdateDiv() {
+                var update = document.getElementById("updateDiv");
+                var change = document.getElementById("changeDiv");
+                var updateHeader = document.getElementById("updateHeader");
+                var changeHeader = document.getElementById("changeHeader");
+
+                update.style.display = "block";
+                change.style.display = "none"; 
+                updateHeader.style.background = "#ff8333"; 
+                updateHeader.style.color = "white";
+                changeHeader.style.background = "white"; 
+                changeHeader.style.color = "black";   
+
+            }
+            function toggleChangeDiv() {
+                var update = document.getElementById("updateDiv");
+                var change = document.getElementById("changeDiv");
+                var changeHeader = document.getElementById("changeHeader");
+                var updateHeader = document.getElementById("updateHeader");
+
+                change.style.display = "block";
+                update.style.display = "none";   
+                changeHeader.style.background = "#ff8333"; 
+                changeHeader.style.color = "white";
+                updateHeader.style.background = "white"; 
+                updateHeader.style.color = "black";   
+
+            }
+           
+        </script>
+
+			  
+		
+	</div>
+</body>
+
+</html>

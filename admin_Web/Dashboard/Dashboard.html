@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dashboard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="https://kit.fontawesome.com/e155720464.js" crossorigin="anonymous"></script> 
+	<link rel="stylesheet" type="text/css" href="Dashboard.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
+</head>
+
+<body>
+	<script>	
+		function myAccFunc() {
+		var x = document.getElementById("demoAcc");
+		if (x.className.indexOf("w3-show") == -1) {
+			x.className += " w3-show";
+			x.previousElementSibling.className += " w3-green";
+		} else { 
+			x.className = x.className.replace(" w3-show", "");
+			x.previousElementSibling.className = 
+			x.previousElementSibling.className.replace(" w3-green", "");
+		}
+		}
+	</script>
+    <div class="sidebar">
+		<div class="sidebar-brand">
+			<img class="headerPhoto" src="../../image/petinder_logo.png" style='object-fit: contain' alt="">
+		</div>
+		
+		<div class="sidebar-menu">
+			<ul>
+				<li>
+					<a href="../../admin_Web/Dashboard/Dashboard.html" class="active"><span><i class="fa-solid fa-table-cells-large"></i></span><span>Dashboard</span></a>
+				</li>
+				<li>
+					<div id="myaccordion">
+						<input type="checkbox" id="accordion1" class="hidecontent"/>
+						<label for="accordion1"><span><i class="fa-solid fa-user"></i></span><span class="name"> Manage Account </span> <span><i class="fa-solid fa-caret-down"></i></span></a></label>
+						<div class="content hidecontent">
+							<p><a href="../../admin_Web/Registered Pet/Registered_Pet.html"><span></span><span class="name">Registered Pets</span></a></p>
+							<p><a href="../../admin_Web/Pet Seller/Pet_Seller.html"><span></span><span class="name">Pet Seller</span></a></p>
+							<p><a href="../../admin_Web/Pet Owner/Pet_Owner.html"><span></span><span class="name">Pet Owner</span></a></p>
+							<p><a href="../../admin_Web/LGU/LGU.html"><span></span><span class="name">LGUs</span></a></p>
+							<p><a href="../../admin_Web/Admin/Admin.html"><span></span><span class="name">Admin</span></a></p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div id="myaccordion">
+						<input type="checkbox" id="accordion2" class="hidecontent"/>
+						<label for="accordion2"><span><i class="fa-solid fa-gears"></i></span><span class="name">Settings</span> <span><i class="fa-solid fa-caret-down"></i></span></a></label>
+						<div class="content hidecontent">
+							<p><a href="../../admin_Web/Settings/Settings.html"><span></span><span class="name">Manage Settings</span></a></p>
+							<p><a href="../../admin_Web/login.html"><span></span><span class="name">Logout</span></a></p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="main-content">
+		<header>
+			<h2>
+				<label for="">
+				 <span><i class="fa-solid fa-bars"></i></span>
+				</label>
+				Dashboard
+			</h2>
+
+			<!-- <div class="search-wrapper">
+				<span><i class="fa-solid fa-magnifying-glass"></i></span>
+				<input type="search" placeholder="Search here">
+			</div> -->
+
+			<div class="user-wrapper">
+				<img src="../../image/cesar_olaer.png" width="40px" height="40px" alt="">
+				<div>
+					<h4>Cesar Olaer</h4>
+				</div>
+			</div>
+
+		</header>
+		<main>
+			<div class="cards">
+				<div class="card-single">
+					<div>
+						<h1>3,058</h1>
+						<span class="spanName">Registered Pet</span>
+					</div>
+					<div>
+						<span><img src="../../image/pet_registered.png" style='height:100%; width: 100%; object-fit: contain' alt=""></span>
+					</div>
+				</div>
+
+				<div class="card-single">
+					<div>
+						<h1>20</h1>
+						<span class="spanName">Pet Seller</span>
+					</div>
+					<div>
+						<span><img src="../../image/pet_seller.png" style='height:80%; width: 80%; object-fit: contain' alt=""> </span>
+					</div>
+				</div>
+
+				<div class="card-single">
+					<div>
+						<h1>1,500</h1>
+						<span class="spanName">Pet Owner</span>
+					</div>
+					<div>
+						<span><img src="../../image/pet_owner.png" style='height:80%; width: 80%; object-fit: contain' alt=""></span>
+					</div>
+				</div>
+
+				<div class="card-single">
+					<div>
+						<h1>5</h1>
+						<span class="spanName">LGUs</span>
+					</div>
+					<div>
+						<span><img src="../../image/Lgu.png" style='height:80%; width: 80%; object-fit: contain' alt=""></span>
+					</div>
+				</div>
+
+				<!-- <div class="card-single">
+					<div>
+						<h1>10</h1>
+						<span class="spanName">Lost Pet</span>
+					</div>
+					<div>
+						<span><img src="../../image/lost_pet.png" style='height:65%; width: 65%; object-fit: contain' alt=""></span>
+					</div>
+				</div> -->
+			</div>
+
+			<div class="recent-grid">
+				<div class="projects">
+					<div class="projects-card">
+						<div class="card-header">
+							<h3>Newly Registered Pet</h3>
+							<button>See all <span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>
+						<div class="card-body">
+							<table width="100%">
+								<thead>
+									<tr>
+										<td>Profile Picture</td>
+										<td>Pet Name</td>
+										<td>Date Registered</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><img src="../../image/chowa.jpg" style="flex: 1; border-radius: 50%; width: 50%; height: 50%;" alt=""></td>
+										<td>
+											<div class="customer-info">
+												<h6>Chowa</h6>
+											</div>
+										</td>
+										<td>
+											<div class="customer-info">
+												<p>February 10, 2023</p>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td><img src="../../image/dogo.jpg" style="flex: 1; border-radius: 50%; width: 50%; height: 50%;" alt=""></td>
+										<td>
+											<div class="customer-info">
+												<h6>Dogo</h6>
+											</div>
+										</td>
+										<td>
+											<div class="customer-info">
+												<p>February 8, 2023</p>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td><img src="../../image/garfield.jpg" style="flex: 1; border-radius: 50%; width: 50%; height: 50%;" alt=""></td>
+										<td>
+											<div class="customer-info">
+												<h6>Garfield</h6>
+											</div>
+										</td>
+										<td>
+											<div class="customer-info">
+												<p>February 5, 2023</p>
+											</div>
+										</td>
+									</tr>
+									
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="projects-card">
+						<div class="card-header">
+							<h3>Pet Owner</h3>
+							<button>See all <span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>
+						<div class="card-body">
+							<table width="100%">
+								<thead>
+									<tr>
+										<td>Profile Picture</td>
+										<td>Pet Owner Name</td>
+										<td>Date Registered</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><img src="../../image/profile-picture.png" style="flex: 1; border-radius: 50%; width: 50%; height: 50%;" alt=""></td>
+										<td>
+											<div class="customer-info">
+												<h6>Clark</h6>
+											</div>
+										</td>
+										<td>
+											<div class="customer-info">
+												<p>January 14, 2022</p>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td><img src="../../image/profile-picture.png" style="flex: 1; border-radius: 50%; width: 50%; height: 50%;" alt=""></td>
+										<td>
+											<div class="customer-info">
+												<h6>Tony</h6>
+											</div>
+										</td>
+										<td>
+											<div class="customer-info">
+												<p>March 20, 2022</p>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td><img src="../../image/profile-picture.png" style="flex: 1; border-radius: 50%; width: 50%; height: 50%;" alt=""></td>
+										<td>
+											<div class="customer-info">
+												<h6>Peter</h6>
+											</div>
+										</td>
+										<td>
+											<div class="customer-info">
+												<p>July 19, 2022</p>
+											</div>
+										</td>
+									</tr>
+									
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				
+				<div class="customers">
+					<div class="card">
+						<div class="card-header">
+							<h3>LGU-DVMF<br>New Clients</h3>
+							<button>See all <span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>
+						<div class="card-body">
+							<div class="customer">
+								<div class="customer-table">
+									<img src="../../image/lgu-cebu-logo.png" style="flex: 1; width: 25%; height: 25%;" alt="">
+									<div class="customer-info">
+										<h5>LGU-DVMF TALISAY</h5>
+										<p>Date Registered: </p>
+										<p>February 10, 2023</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="customer">
+								<div class="customer-table">
+									<img src="../../image/lgu-cebu-logo.png" style="flex: 1; width: 25%; height: 25%;" alt="">
+									<div class="customer-info">
+										<h5>LGU-DVMF CEBU</h5>
+										<p>Date Registered: </p>
+										<p>December 15, 2022</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="customer">
+								<div class="customer-table">
+									<img src="../../image/lgu-cebu-logo.png" style="flex: 1; width: 25%; height: 25%;" alt="">
+									<div class="customer-info">
+										<h5>LGU-DVMF MANDAUE</h5>
+										<p>Date Registered: </p>
+										<p>August 29, 2022</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="customer">
+								<div class="customer-table">
+									<img src="../../image/lgu-cebu-logo.png" style="flex: 1; width: 25%; height: 25%;" alt="">
+									<div class="customer-info">
+										<h5>LGU-DVMF LAPU-LAPU</h5>
+										<p>Date Registered: </p>
+										<p>June 19, 2022</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="customer">
+								<div class="customer-table">
+									<img src="../../image/lgu-cebu-logo.png" style="flex: 1; width: 25%; height: 25%;" alt="">
+									<div class="customer-info">
+										<h5>LGU-DVMF BALAMBAN</h5>
+										<p>Date Registered: </p>
+										<p>January 12, 2022</p>
+									</div>
+								</div>
+							</div>
+
+							
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+</body>
+
+</html>
