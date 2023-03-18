@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registered Pet</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="https://kit.fontawesome.com/e155720464.js" crossorigin="anonymous"></script> 
+	<link rel="stylesheet" type="text/css" href="lgu-add-vaccine.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
+</head>
+
+<body>
+    <div class="sidebar">
+		<div class="sidebar-brand">
+			<img class="headerPhoto" src="../../../../image/petinder_logo.png" style='object-fit: contain' alt="">
+		</div>
+		
+		<div class="sidebar-menu">
+			<ul>
+				<li>
+					<div id="myaccordion">
+						<input type="checkbox" id="accordion1" class="hidecontent"/>
+						<label for="accordion1"><span><i class="fa-solid fa-user"></i></span><span class="name"> Manage Account </span> <span><i class="fa-solid fa-caret-down"></i></span></a></label>
+						<div class="content">
+							<p><a href="../../../../LGU-Web/LGU-RegisteredPet/lgu-registered-pet.html" class="active"><span></span><span class="name">Registered Pets</span></a></p>
+							<p><a href="../../../../LGU-Web/LGU-PetSeller/lgu-pet-seller.html" ><span></span><span class="name">Pet Seller</span></a></p>
+							<p><a href="../../../../LGU-Web/LGU-PetOwner/lgu-pet-owner.html" ><span></span><span class="name">Pet Owner</span></a></p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="../../../../LGU-Web/LGU-LostPet/lgu-lost-pet.html"><span><i class="fa-solid fa-paw"></i></span><span>Lost Pets</span></a>
+				</li>
+				<li>
+					<a href="../../../../LGU-Web/LGU-Announcement/lgu-announcement.html"><span><i class="fa-solid fa-bullhorn"></i></span><span>Announcement</span></a>
+				</li>
+				<li>
+					<div id="myaccordion">
+						<input type="checkbox" id="accordion2" class="hidecontent"/>
+						<label for="accordion2"><span><i class="fa-solid fa-gears"></i></span><span class="name">Settings</span> <span><i class="fa-solid fa-caret-down"></i></span></a></label>
+						<div class="content hidecontent">
+							<p><a href="../../../../LGU-Web/LGU-ManageSettings/lgu-settings.html" class="active"><span></span><span class="name">Manage Settings</span></a></p>
+							<p><a href="../../../../LGU-Web/lgu-login.html"><span></span><span class="name">Logout</span></a></p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="main-content">
+		<header>
+			<h2>
+				<label for="">
+				 <span><i class="fa-solid fa-bars"></i></span>
+				</label>
+				 Add Vaccine Pet Profile
+			</h2>
+
+
+			<div class="user-wrapper">
+				<img src="../../../../image/cesar_olaer.png" width="40px" height="40px" alt="">
+				<div>
+					<h4>Cesar Olaer</h4>
+				</div>
+			</div>
+
+		</header>
+		<div class="container">
+			<div>
+				<a href="../../../../LGU-Web/LGU-RegisteredPet/Pet Profile/lge-pet-profile.html">
+					<div class="dropdown">
+						<button class="dropbtn"><span><i class="fa-solid fa-arrow-left"></i></span></button>
+					  </div>
+				</a>
+			</div>
+			<div class="row">
+                <div class="lgu-header">
+                    <u>Add Vaccine Pet Profile</u>
+                </div>
+            </div>
+            <div class="row">
+				<div class="col">
+                    <div class="col-add">
+						<label for="dateVaccine"><b>Date of Vaccine</b></label>
+					</div>
+                    <div class="col-add">
+                        <input type="text" placeholder="Enter Date of Vaccine" name="dateVaccine" id="dateVaccine" required>
+					</div>
+                    <div class="col-add">
+						<label for="weight"><b>Weight</b></label>
+					</div>
+                    <div class="col-add">
+                        <input type="text" placeholder="Enter Weight" name="weight" id="weight" required>
+					</div>
+                    
+					<div class="col-add">
+						<label for="typeVaccine"><b>Type of Vaccine</b></label>
+					</div>
+                    <div class="col-add">
+                        <input type="text" placeholder="Enter Type of Vaccine" name="typeVaccine" id="typeVaccine" required>
+					</div><div class="col-add">
+						<label for="manufacturer"><b>Manufacturer</b></label>
+					</div>
+                    <div class="col-add">
+                        <input type="text" placeholder="Enter Manufacturer" name="manufacturer" id="manufacturer" required>
+					</div>
+					<div class="col-add">
+						<label for="lotNumber"><b>Lot No. / Batch No.</b></label>
+					</div>
+                    <div class="col-add">
+                        <input type="text" placeholder="Enter Lot No. / Batch No." name="lotNumber" id="lotNumber" required>
+					</div><div class="col-add">
+						<label for="dateNextVaccine"><b>Date of Next Vaccination</b></label>
+					</div>
+                    <div class="col-add">
+                        <input type="text" placeholder="Enter Date of Next Vaccination" name="dateNextVaccine" id="dateNextVaccine" required>
+					</div><div class="col-add">
+						<label for="vetName"><b>VET Name & PRC Np.</b></label>
+					</div>
+                    <div class="col-add">
+                        <input type="text" placeholder="Enter VET Name & PRC Np." name="vetName" id="vetName" required>
+					</div>
+                    
+				</div>
+				<div class="col">
+                    <div class="profile-wrapper">
+                        <img src="../../../../image/profile.png" style="flex: 1; width: 100%; height: 100%;" alt="">
+                    </div>
+                    
+                   
+                    <div class="add-button-wrapper">
+                        <a href="">
+                            <div class="next">
+                                <button class="next-button">Submit</span></button>
+                              </div>
+                        </a>
+                    </div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

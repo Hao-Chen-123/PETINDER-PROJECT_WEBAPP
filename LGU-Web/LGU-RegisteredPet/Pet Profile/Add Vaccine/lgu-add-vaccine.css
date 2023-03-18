@@ -123,10 +123,9 @@
     position: relative;
     display: inline-block;
     margin-top: 8vh;
-    margin-bottom: 2vh;
     margin-left: 1vw;
   }
-.dropdown:hover .dropbtn {background: black;}
+.dropdown:hover .dropbtn {background: black}
 
 
 /* USER BOX */
@@ -189,62 +188,62 @@
     }
 }
 
-/* PET PROFILE */
-.profile_image{
-    height: auto;
-    width: 70%;
-    margin-top: 10%;
-    margin-left: 2vw;
-    border-radius: 3vw;
-    border: #ff8333 solid;
-}
 
-.row{
-    max-width: 100%;
-    padding-bottom: 5vh;
+/* ADD Pet*/
+.lgu-header{
+    font-size: 4vw;
+    font-weight: bolder;
+    color: #ff8333;
+    margin-left: 3vw;
 }
-.col-child{
-    display: inline-block;
-    padding: 3% 3%;
-    vertical-align: middle;
+.container{
+    margin-bottom: 15vh;
 }
-.col-header h2{
-    width: fit-content;
+.col-add{
+    margin-left: 3vw;
+    margin-bottom: 1vh;
+    font-size: 3vh;
+    color: #ff8333;
 }
-.col p{
-    margin-left: 6vw;
+.col-add input{
+    width: 35vw;
+    height: 8vh;
 }
-
-.update{
-    position: relative;
-    display: inline-block;
-    margin-top: 2vh;
+.status-wrapper{
+    margin-bottom: 1vh;
+    font-size: 3vh;
+    color: #ff8333;
 }
-.update-button{
-    background-color: #ff8333;
-    color: white;
-    height: auto;
-    width: 10vw;
-    padding: 8%;
-    border: none;
-    border-radius:5px;
+.status-wrapper select{
+    width: 35vw;
+    height: 8vh;
 }
-
-.table tr{
+.profile-wrapper{
     border: black solid;
-}
-.vaccine{
-    position: relative;
-    display: inline-block;
-    margin-top: 2vh;
-}
-.vaccine-button{
-    background-color: #ff8333;
-    color: white;
-    height: auto;
-    width: 10vw;
-    padding: 8%;
-    border: none;
-    border-radius:5px;
     margin-bottom: 5vh;
 }
+.profile-wrapper:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.add-button-wrapper{
+    margin-top: 5vh;
+    margin-left: 15vw;
+}
+
+.next-button{
+    color: white;
+    background: #ff8333;
+    margin-bottom: 3vh;
+    border-radius:5px;
+    padding: 5% 5%;
+    font-weight: bolder;
+
+}
+.next-button:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+
+   
+  }
